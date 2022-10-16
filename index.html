@@ -8,57 +8,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
-    <div class="logo">
-        <p>Sara<span>.</span></p>
-    </div>
-    <ul class="menu">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about_me">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#">Resume</a></li>
-    </ul>
+    <div class="head">
+        <div class="logo">
+            <p>Sara<span>.</span></p>
+        </div>
+        <ul class="menu">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+    
+        <!-- menu responsive -->
 
-    <!-- menu responsive -->
+    </div>
+    
     <div class="toggle_menu"></div>
 </header>
 
 <br><br><br><br>
 <body>
-    <div class="presentation">
-        <div>
-            <h1>
-                Lorem ipsum, dolor sit amet 
-                <br>
-                dolor sit amet consectetur ad.
-                <br>
-                dolor sit amet consectetur ad.
-            </h1>
+    <section>
+        <div class="presentation">
+            <div>
+                <h1>Lorem
+                    <span
+                       class="txt-rotate"
+                       data-period="2000"
+                       data-rotate='[ " ipsum, dolor sit amet " ]'></span> 
+                  </h1>
+                  <h1>Dolor dhdh db bf
+                  </h1>
+                  <h1>Tendram jchsbvch svbhsvb  
+                  </h1>
+            </div>
+            <div>
+                <img src="https://picsum.photos/id/1080/600/400" alt="">
+            </div>
         </div>
-        <div>
-            <img src="https://picsum.photos/id/1080/600/400" alt="">
-        </div>
-    </div>
+
+    </section>
+  
     <div class="projects">
         <div>3</div>
         <div>4</div>
-    </div>
-    <div>
         <div>5</div>
         <div>6</div>
-        Lorem ipsum, dolor sit amet consectetur ad.
-    </div>
-    <div>
         <div>7</div>
         <div>8</div>
     </div>
-    <script>
-        var small_menu = document.querySelector('.toggle_menu')
-        var menu = document.querySelector('.menu')
-    
-        small_menu.onclick = function(){
-             small_menu.classList.toggle('active');
-             menu.classList.toggle('responsive');
-        }
-    </script>
+
+    <script src="main.js"></script>
 </body>
 </html>

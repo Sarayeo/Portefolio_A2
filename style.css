@@ -7,17 +7,16 @@
     font-family: 'Poppins', sans-serif; 
 }
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #27ae60;
+    background-color: rgb(159, 201, 239);
 }
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
-    padding: 0 10%;
+    height: 70px;
     position: fixed;
     left: 0;
     right: 0;
@@ -25,28 +24,45 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
    
 }
-.menu {
+.head{
     display: flex;
-    justify-content: center;
+    width: 100%;
+     
 }
+.menu {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+    padding-right: 5%;
+}
+
 .logo {
-    color: #142375;
+    width: 30%;
+    color: rgba(11 5 33);
     font-weight: 700;
     font-size: 25px;
+    padding: 0 10%;
 }
 .logo span {
-    color: #cbd155;
+    color: rgba(215 214 153);
 }
+
 .menu li {
    margin: 0 15px;
    list-style: none;
+   
 }
 .menu li a {
-    font-size: 14px;
+    font-weight: 350;
+    font-size: 20px;
     text-decoration: 0;
-    color: #999;
+    color: rgba(11 5 33);
     position: relative;
+    
+    
 }
+/*
 .menu li a::before {
     position: absolute;
     top: -5px;
@@ -55,31 +71,34 @@ header {
     width: 0;
     height: 2px;
     border-radius: 6px;
-    background-color: #27ae60;
+    background-color: rgba(215 214 153);
     transition: 0.5s;
 }
 .menu li a:hover::before {
     width: 100%;
 }
+*/
 .menu li a::after {
     position: absolute;
-    bottom: -5px;
+    bottom: 2px;
     right: 0;
     content: "";
-    width: 0;
-    height: 2px;
-    border-radius: 6px;
-    background-color: #27ae60;
+    width: 100%;
+    height: 0px;
+    background-color: rgba(215, 214 ,153, 0.7);
     transition: 0.5s;
 }
 .menu li a:hover::after {
-    width: 100%;
+    height: 10px;
 }
-.menu li a:hover {
-    color: #000;
-}
+.presentation {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-@media (max-width:964px) {
+}
+@media (max-width:980px) {
     header .menu {
         display: none;
     }
