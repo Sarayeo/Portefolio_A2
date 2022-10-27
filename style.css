@@ -32,6 +32,7 @@ header {
   width: 100%;
 }
 
+
 .menu {
   width: 70%;
   display: flex;
@@ -104,6 +105,40 @@ header {
   justify-content: space-between;
 }
 
+.presentation .un img {
+  width: 500px;
+  height: 600px;
+  border-radius: 10%;
+}
+
+.presentation .deux img {
+  width: 300px;
+  height: 600px;
+  border-radius: 5%;
+}
+.box{
+  height: 20vh;
+  width: 25%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 20vh;
+  background-color: gray;
+  position: absolute;
+  z-index: 5;
+  margin-left: 15%;
+  margin-top: 20%;
+
+}
+.box :nth-child(1n) {
+  background-color: rgb(179, 76, 76);
+
+}
+.box :nth-child(2n) {
+  background-color: rgba(115, 130, 217, 0.911);
+
+}
+
 @media (max-width: 980px) {
   header .menu {
     display: none;
@@ -166,17 +201,7 @@ header {
     margin: 15px 0;
   }
 }
-.presentation .un img {
-  width: 500px;
-  height: 600px;
-  border-radius: 10%;
-}
 
-.presentation .deux img {
-  width: 300px;
-  height: 600px;
-  border-radius: 5%;
-}
 
 .skills {
   display: flex;
@@ -187,7 +212,7 @@ header {
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 33.3333333333%);
+  grid-template-columns: repeat(3,calc(100% / 3));
   grid-template-rows: 20vh 35vh 35vh 30vh;
   background-color: gray;
 }
@@ -276,60 +301,41 @@ header {
   grid-row: 4/5;
 }/*# sourceMappingURL=style.css.map */
 
-.box{
-  height: 20vh;
-  width: 25%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 20vh;
-  background-color: gray;
-  position: absolute;
-  z-index: 5;
-  margin-left: 15%;
-  margin-top: 20%;
-
-}
-.box :nth-child(1n) {
-  background-color: rgb(179, 76, 76);
-
-}
-.box :nth-child(2n) {
-  background-color: rgba(115, 130, 217, 0.911);
-
-}
-
 
 
 .slup {
-  width: 240px;
-  height: 320px;
-}
-
-.slupped {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.slupped {
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+  width: 217px;px;
+  height: 209px;
+  
+ 
 }
 
 .slupped:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+  background-color: #AAABC6;
+  
 }
 
 .slupped:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
+  background-color: #D7D699;
+  
 }
 
 .slupped:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
+  background-color: #C4D3F5;
 }
 
 .slupped:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+  background-color: #CFCFCF;
 }
-
-
