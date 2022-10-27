@@ -99,7 +99,8 @@ header {
 }
 
 .presentation {
-  width: 90%;
+  padding: 4%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -316,7 +317,7 @@ header {
   font-size: 22px;
   font-weight: bold;
   color: #fff;
-  width: 217px;px;
+  width: 217px;
   height: 209px;
   
  
@@ -328,11 +329,15 @@ header {
 }
 
 .slupped:nth-child(2n) {
+  width: 209px;
+  height: 270px;
   background-color: #D7D699;
   
 }
 
 .slupped:nth-child(3n) {
+  width: 230px;
+  height: 230px;
   background-color: #C4D3F5;
 }
 
