@@ -292,14 +292,14 @@ header {
 }
 
 .about_me div:nth-of-type(1) {
-  background-color: aqua;
+  background-color: rgb(73, 36, 36);
   height: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
 .about_me div:nth-of-type(2) {
-  background-color: rgb(255, 60, 0);
+  background-color: rgb(255, 0, 0);
   height: 100%;
   grid-column: 2/3;
   grid-row: 1/2;
