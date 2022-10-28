@@ -14,13 +14,12 @@ i could  then acces to my portfolio.
 After doing so I activated a function checkly located in the running checks tab . I did a new commit and then pushed my new update before checking to see if everything was ok.
 
 
-### quick things to know  ?
+## actions installed !
 ```php
-- 🌱 I’m currently learning HTML CSS JS PHP SQL MySQL SCSS
+- 🌱 After deploying and activating my checkly I went to my market place and then chose Imgbot action in other 
+      to uptimise my website's perfomences with the images
 
-- 💬 Ask me about Web developement, Art and sports in general
-
-- ⚡ Fun fact I once got lost In the atlantic ocean because I wanted to win a race.
+- ⚡ I also decided to add .............................................................................................
 
 ```
 
