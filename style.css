@@ -232,7 +232,7 @@ header {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2,calc(100% / 2));
-  grid-template-rows: 50vh 50vh;
+  grid-template-rows: 50vh 5git 0vh;
   background-color: gray;
 
 }
