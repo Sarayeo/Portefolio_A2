@@ -306,7 +306,7 @@ header {
 }
 
 .about_me div:nth-of-type(3) {
-  background-color: rgb(180, 148, 129);
+  background-color: rgb(255, 94, 0);
   height: 100%;
   grid-column: 3/4;
   grid-row: 1/2;
