@@ -239,7 +239,7 @@ header {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2,calc(100% / 2));
-  grid-template-rows: 50vh 5git 0vh;
+  grid-template-rows: 30vh 70vh;
 
 }
 .haut{
@@ -280,18 +280,18 @@ header {
   flex-direction: row;
   display: grid;
   grid-template-columns: repeat(2,calc(100% / 2));
-  grid-template-rows: 50vh;
+  grid-template-rows: 70vh;
 
 }
 .container {
   width: 600px;
-  height: 300px;
+  height: 400px;
   position: relative;
   margin: 30px;
 }
 
 .boxe {
-  width: 90%;
+  width: 95%;
   height: 100%;
   position: absolute;
   top: 0;
@@ -301,12 +301,13 @@ header {
 }
 
 .boxi {
-  width: 30%;
-  height: 70%;
+  width: 50%;
+  height: 30%;
   position: absolute;
-  margin-left: 1200;
-  opacity: 0.7;
-  z-index: 9;
+  top: -3em;
+  left: 10em;
+  opacity: 1;
+  z-index: 5;
   background: #009938;
 }
 
