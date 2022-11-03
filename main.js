@@ -19,6 +19,30 @@ var small_menu = document.querySelector('.toggle_menu')
                 option.classList.add("active")
             })
         })
+  //filtreur d'articles("tous");
+        function filterarticles(c){
+          console.log(c)
+          document.querySelectorAll('.card').forEach(function(article) {
+           console.log(article)
+           if(c == 'all') {
+             article.style.display = 'block';
+           }
+           else if(article.classList.contains(c)) {
+             article.style.display = 'block';
+           } else {
+             article.style.display = 'none';
+           }
+         })
+     
+          /*var x,i;
+         x = document.getElementsByClassName("card");
+          if (c == "all") c = ""
+          for (i = 0; i< x.length; i++) {
+            removeClass(x[i], "show");
+            if(x[i].className.indexOf(c)> -1) addClass(x[i],"show");
+          }*/
+        }
+      
 //animation text JS
 
 var TxtRotate = function(el, toRotate, period) {
