@@ -8,6 +8,17 @@ var small_menu = document.querySelector('.toggle_menu')
              menu.classList.toggle('responsive');
         }
 
+//slider
+        const options = document.querySelectorAll(".our_card")
+        console.log(options)
+        options.forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll(".our_card").forEach(removeActive => {
+                    removeActive.classList.remove("active")
+                })
+                option.classList.add("active")
+            })
+        })
 //animation text JS
 
 var TxtRotate = function(el, toRotate, period) {

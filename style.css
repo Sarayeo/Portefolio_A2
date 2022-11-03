@@ -13,6 +13,46 @@
 ::-webkit-scrollbar-thumb {
   background-color: rgb(159, 201, 239);
 }
+.oursection {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  padding: 3%;
+  min-width: 800px;
+  max-width: 1200px;
+  min-height: 550px;
+  max-height: 650px;
+  
+  
+}
+.our_card.active {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 400px;
+  margin: 0px;
+  border-radius: 40px;
+}
+.our_card {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+.our_card:not(.active) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+.our_card {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
 
 header {
   display: flex;
@@ -316,95 +356,116 @@ header {
   height: 120vh;
   width: 100%;
   margin: 0 auto;
+  padding: 3%;
+  display: block;
+}
+.rowa{
   display: grid;
-  grid-template-columns: repeat(3,calc(100% / 3));
-  grid-template-rows: 20vh 35vh 35vh 30vh;
-  background-color: gray;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vh;
 }
-
-.about_me div:nth-of-type(1) {
-  background-color: rgb(73, 36, 36);
+.rowa :nth-of-type(1){
   height: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
 }
-
-.about_me div:nth-of-type(2) {
-  background-color: rgb(255, 0, 0);
+.rowa :nth-of-type(2){
   height: 100%;
   grid-column: 2/3;
   grid-row: 1/2;
 }
-
-.about_me div:nth-of-type(3) {
-  background-color: rgb(255, 94, 0);
+.rowa :nth-of-type(3){
+  height: 100%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.ligne1{
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+.rowb{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40vh;
+}
+.rowb :nth-of-type(1){
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.rowb :nth-of-type(2){
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.rowb :nth-of-type(3){
+  height: 100%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.rowb :nth-of-type(3) .p{
+  font-weight: 500;
+  font-family: 'Segoe UI';
+}
+.ligne2{
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+.rowc{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40vh;
+}
+.rowc :nth-of-type(1){
+  
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.rowc :nth-of-type(2){
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.rowc :nth-of-type(3){
+  height: 100%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.ligne3{
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+.rowd{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vh;
+}
+.rowd :nth-of-type(1){
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.rowd :nth-of-type(2){
+  background-color: rgb(213, 34, 186);
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.rowd :nth-of-type(3){
   height: 100%;
   grid-column: 3/4;
   grid-row: 1/2;
 }
 
-.about_me div:nth-of-type(4) {
-  background-color: rgb(120, 178, 95);
-  height: 100%;
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.about_me div:nth-of-type(5) {
-  background-color: rgb(120, 139, 139);
-  height: 100%;
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.about_me div:nth-of-type(6) {
-  background-color: rgb(183, 0, 255);
-  height: 100%;
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.about_me div:nth-of-type(7) {
-  background-color: rgb(87, 188, 44);
-  height: 100%;
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-
-.about_me div:nth-of-type(8) {
-  background-color: rgb(53, 135, 135);
-  height: 100%;
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-
-.about_me div:nth-of-type(9) {
-  background-color: rgb(97, 76, 105);
-  height: 100%;
-  grid-column: 3/4;
-  grid-row: 3/4;
-}
-
-.about_me div:nth-of-type(10) {
-  background-color: rgb(64, 113, 43);
-  height: 100%;
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-
-.about_me div:nth-of-type(11) {
-  background-color: rgb(56, 21, 136);
-  height: 100%;
-  grid-column: 2/3;
-  grid-row: 4/5;
-}
-
-.about_me div:nth-of-type(12) {
-  background-color: rgb(174, 130, 27);
-  height: 100%;
-  grid-column: 3/4;
-  grid-row: 4/5;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 
 
 
