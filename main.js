@@ -12,7 +12,7 @@ var small_menu = document.querySelector('.toggle_menu')
         const options = document.querySelectorAll(".our_card")
         console.log(options)
         options.forEach(option => {
-            option.addEventListener('click', function() {
+            option.addEventListener('mouseover', function() {
                 document.querySelectorAll(".our_card").forEach(removeActive => {
                     removeActive.classList.remove("active")
                 })
