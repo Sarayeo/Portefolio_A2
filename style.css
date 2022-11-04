@@ -367,6 +367,8 @@ header {
   grid-template-rows: 20vh;
 }
 .rowa :nth-of-type(1){
+  display: flex;
+  justify-content: center;
   height: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
@@ -377,6 +379,8 @@ header {
   grid-row: 1/2;
 }
 .rowa :nth-of-type(3){
+  display: flex;
+  justify-content: center;
   height: 100%;
   grid-column: 3/4;
   grid-row: 1/2;
@@ -393,21 +397,25 @@ header {
   grid-template-rows: 40vh;
 }
 .rowb :nth-of-type(1){
+ 
   height: 100%;
   grid-column: 1/2;
   grid-row: 1/2;
 }
 .rowb :nth-of-type(2){
+  background-color: #C4D3F5;
+
   height: 100%;
   grid-column: 2/3;
   grid-row: 1/2;
 }
 .rowb :nth-of-type(3){
+  background-color: #D7D699;
   height: 100%;
   grid-column: 3/4;
   grid-row: 1/2;
 }
-.rowb :nth-of-type(3) .p{
+.rowb :nth-of-type(3) p{
   font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
