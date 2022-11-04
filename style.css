@@ -173,7 +173,7 @@ header {
   content: "";
   width: 40%;
   height: 0px;
-  background-color: rgba(99, 175, 181, 0.856);
+  background-color: rgba(99, 176, 181, 0.763);
   z-index: 5;
   transition: 0.5s;
 }
