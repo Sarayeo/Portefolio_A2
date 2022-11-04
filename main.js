@@ -34,12 +34,13 @@ var TxtRotate = function(el, toRotate, period) {
   
   TxtRotate.prototype.tick = function() {
     var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+    var fullTxt = Array.from(this.toRotate[i]).slice(0, this.toRotate[i].length).join('');
   
     if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      let max = this.txt.length === fullTxt.length ? 4 : 1
+      this.txt = Array.from(fullTxt).slice(0, this.txt.length - max).join('')
     } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      this.txt = Array.from(fullTxt).slice(0, this.txt.length + 1).join('')
     }
   
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
@@ -48,8 +49,8 @@ var TxtRotate = function(el, toRotate, period) {
     var delta = 300 - Math.random() * 100;
   
     if (this.isDeleting) { delta /= 2; }
-  
-    if (!this.isDeleting && this.txt === fullTxt) {
+
+    if (!this.isDeleting && this.txt.length === fullTxt.length) {
       delta = this.period;
       this.isDeleting = true;
     } else if (this.isDeleting && this.txt === '') {
