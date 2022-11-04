@@ -101,7 +101,7 @@ header {
 }
 
 .presentation {
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 3%;
@@ -150,19 +150,19 @@ header {
   grid-template-rows: 20vh;
   background-color: gray;
   position: absolute;
-  z-index: 5;
-  margin-left: 18%;
+  margin-left: 15%;
+  z-index: 1;
   margin-top: 22%;
   
 
 }
-.box :nth-child(1n) {
+.box :nth-child(1) {
   background-color: rgb(255, 255, 255);
   border: #D7D699 2px solid;
  
 
 }
-.box :nth-child(2n) {
+.box :nth-child(2) {
   background-color: #D7D699;
 
 }
@@ -171,15 +171,15 @@ header {
   bottom: 2px;
   right: 0;
   content: "";
-  width: 100%;
+  width: 40%;
   height: 0px;
-  background-color: rgb(2, 58, 62);
+  background-color: rgba(99, 175, 181, 0.856);
   z-index: 5;
   transition: 0.5s;
 }
 
 .dos:hover::after {
-  height: 20vh;
+  height: 18vh;
 }
 .midle{
   padding-left: 30%;
