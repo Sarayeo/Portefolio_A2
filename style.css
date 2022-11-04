@@ -114,7 +114,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 5%;
-  padding: 4%;
+  padding: 3%;
   min-width: 800px;
   max-width: 1000px;
   min-height: 550px;
@@ -128,7 +128,9 @@ header {
   margin: 0px;
   border-radius: 35px;
   
+  
 }
+
 .our_card {
   position: relative;
   overflow: hidden;
@@ -136,10 +138,13 @@ header {
   margin: 10px;
   cursor: pointer;
   transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  background-repeat: no-repeat;
+ 
 }
 .our_card:not(.active) {
   flex-grow: 1;
   border-radius: 30px;
+ 
 }
 .box{
   height: 20vh;
@@ -150,7 +155,7 @@ header {
   grid-template-rows: 20vh;
   background-color: gray;
   position: absolute;
-  margin-left: 15%;
+  margin-left: 10%;
   z-index: 1;
   margin-top: 22%;
   
@@ -327,6 +332,10 @@ header {
   border:3px black solid;
   opacity: 0.7;
 }
+.boxe h1{
+  align-content: initial;
+  padding: 15%;
+}
 
 .boxi {
   width: 50%;
@@ -338,7 +347,11 @@ header {
   z-index: 5;
   background: #D7D699;
 }
-
+.boxi h1{
+  align-content: initial;
+  margin-left: 20%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .about_me {
   height: 120vh;
@@ -396,7 +409,7 @@ header {
 }
 .rowb :nth-of-type(3) .p{
   font-weight: 500;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .ligne2{
   height: 2px;
