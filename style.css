@@ -14,10 +14,74 @@
   background-color: rgb(159, 201, 239);
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1250px) {
   body {
     padding-left: 10%;
     padding-right: 10%;
+  }
+  body .presentation {
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body .presentation h1 {
+    color: #484358;
+  }
+  body .presentation h2 {
+    color: #484358;
+  }
+  body .presentation .box {
+    height: 18vh;
+    width: 30%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 18vh;
+    position: absolute;
+    margin-left: 10%;
+    z-index: 1;
+    margin-top: 22%;
+  }
+  body .presentation .box :nth-child(1) {
+    border: #D7D699 2px solid;
+    display: flex;
+    justify-content: center;
+  }
+  body .presentation .box :nth-child(1) p {
+    padding-left: 10%;
+    padding-top: 10%;
+    font-size: 400;
+    color: #bd8f4d;
+  }
+  body .presentation .box :nth-child(2) {
+    background-color: #D7D699;
+    display: flex;
+    justify-content: center;
+  }
+  body .presentation .box :nth-child(2) h2 {
+    font-size: 600;
+    background-color: #D7D699;
+    margin-top: 15%;
+    color: rgb(255, 255, 255);
+  }
+  body .presentation .box .dos::after {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    content: "";
+    width: 40%;
+    height: 0px;
+    background-color: #ebcfa8;
+    z-index: 5;
+    transition: 0.3s;
+  }
+  body .presentation .box .dos:hover::after {
+    height: 17.5vh;
   }
 }
 header {
@@ -30,7 +94,7 @@ header {
   left: 0;
   right: 0;
   background-color: rgb(255, 255, 255);
-  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 header .head {
   display: flex;
@@ -46,6 +110,9 @@ header .head .logo {
 }
 header .head .logo span {
   color: rgb(215, 214, 153);
+}
+header .head .logo span a {
+  text-decoration: none;
 }
 header .head .menu {
   width: 70%;
@@ -106,6 +173,12 @@ header .head .menu li a:hover::after {
   align-items: center;
   justify-content: space-between;
 }
+.presentation h1 {
+  color: #484358;
+}
+.presentation h2 {
+  color: #484358;
+}
 .presentation .box {
   height: 20vh;
   width: 30%;
@@ -113,18 +186,33 @@ header .head .menu li a:hover::after {
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 20vh;
-  background-color: gray;
   position: absolute;
   margin-left: 10%;
   z-index: 1;
   margin-top: 22%;
 }
 .presentation .box :nth-child(1) {
-  background-color: rgb(255, 255, 255);
-  border: #D7D699 2px solid;
+  border: #D7D699 3px solid;
+  display: flex;
+  justify-content: center;
+}
+.presentation .box :nth-child(1) p {
+  font-size: 400;
+  margin-top: -1%;
+  padding-left: 5%;
+  padding-top: 3%;
+  color: #bd8f4d;
 }
 .presentation .box :nth-child(2) {
   background-color: #D7D699;
+  display: flex;
+  justify-content: center;
+}
+.presentation .box :nth-child(2) h2 {
+  font-size: 600;
+  background-color: #D7D699;
+  margin-top: 15%;
+  color: rgb(255, 255, 255);
 }
 .presentation .box .dos::after {
   position: absolute;
@@ -133,12 +221,12 @@ header .head .menu li a:hover::after {
   content: "";
   width: 40%;
   height: 0px;
-  background-color: rgba(99, 176, 181, 0.763);
+  background-color: #ebcfa8;
   z-index: 5;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .presentation .box .dos:hover::after {
-  height: 18vh;
+  height: 19.5vh;
 }
 .presentation .oursection {
   display: flex;
@@ -179,7 +267,7 @@ header .head .menu li a:hover::after {
 }
 
 .animate__animated.animate__fadeInUp {
-  --animation-delay: min($numbers: 1);
+  --animation-delay: 3s;
 }
 
 .midle {
@@ -571,24 +659,26 @@ header .head .menu li a:hover::after {
     position: absolute;
     content: "";
     height: 3px;
-    width: 28px;
-    background-color: rgb(215, 214, 153);
-    border-radius: 6px;
-    box-shadow: 0 10px 0 rgb(215, 214, 153);
+    width: 26px;
+    margin-left: 4px;
+    border-radius: 2px;
+    background-color: #484358;
+    box-shadow: 0 10px 0 #484358;
     transform: translateY(-10px);
-    transition: 0.5s;
+    transition: 0.3s;
   }
   .toggle_menu.active::before {
     transform: translateY(0) rotate(135deg);
-    box-shadow: 0 0 0 rgb(215, 214, 153);
+    box-shadow: 0 0 0 #484358;
   }
   .toggle_menu::after {
     position: absolute;
     content: "";
     height: 3px;
-    width: 28px;
-    background-color: rgb(215, 214, 153);
-    border-radius: 6px;
+    width: 22px;
+    margin-left: 5px;
+    border-radius: 2px;
+    background-color: #D7D699;
     transform: translateY(10px);
     transition: 0.5s;
   }
@@ -610,5 +700,128 @@ header .head .menu li a:hover::after {
   }
   header .menu.responsive li {
     margin: 15px 0;
+  }
+  body .midle {
+    padding-left: 25%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body .categories {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-direction: row;
+    padding: 7%;
+  }
+  body .categories .cat {
+    font-weight: 350;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body .categories .cat :nth-child(1) {
+    color: #484358;
+    font-weight: 550;
+    font-size: 17px;
+  }
+  body .categories .barre {
+    top: 2px;
+    bottom: 2px;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #0B0521;
+  }
+  body .presentation {
+    padding-top: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body .presentation h1 {
+    color: #484358;
+  }
+  body .presentation h2 {
+    color: #484358;
+  }
+  body .presentation .box {
+    height: 18vh;
+    width: 30%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 18vh;
+    position: absolute;
+    margin-left: 10%;
+    z-index: 1;
+    margin-top: 50%;
+  }
+  body .presentation .box :nth-child(1) {
+    border: #D7D699 2px solid;
+    display: flex;
+    justify-content: center;
+  }
+  body .presentation .box :nth-child(1) p {
+    padding-left: 10%;
+    padding-top: 10%;
+    font-size: 400;
+    color: #bd8f4d;
+  }
+  body .presentation .box :nth-child(2) {
+    background-color: #D7D699;
+    display: flex;
+    justify-content: center;
+  }
+  body .presentation .box :nth-child(2) h2 {
+    font-size: 600;
+    background-color: #D7D699;
+    margin-top: 15%;
+    color: rgb(255, 255, 255);
+  }
+  body .presentation .box .dos::after {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    content: "";
+    width: 40%;
+    height: 0px;
+    background-color: #ebcfa8;
+    z-index: 5;
+    transition: 0.3s;
+  }
+  body .presentation .box .dos:hover::after {
+    height: 17.5vh;
+  }
+  body .presentation .oursection {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 3%;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 150px;
+    max-height: 350px;
+  }
+  body .presentation .oursection .our_card.active {
+    flex-grow: 1000;
+    transform: scale(1);
+    max-width: 300px;
+    margin: 0px;
+    border-radius: 20px;
+  }
+  body .presentation .oursection .our_card {
+    position: relative;
+    overflow: hidden;
+    min-width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+  body .presentation .oursection .our_card:not(.active) {
+    flex-grow: 1;
+    border-radius: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
