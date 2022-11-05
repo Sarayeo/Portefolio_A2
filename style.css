@@ -357,7 +357,7 @@ header .head .menu li a:hover::after {
   -webkit-filter: grayscale(0);
 }
 #projects .slup .sluppy .v a h3 {
-  color: #0b1d7b;
+  color: rgba(19, 32, 97, 0.8431372549);
   margin-left: 13%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -482,6 +482,7 @@ header .head .menu li a:hover::after {
   grid-row: 1/2;
   gap: 10%;
   align-items: center;
+  display: flex;
   justify-content: center;
   flex-direction: row;
 }
@@ -491,6 +492,7 @@ header .head .menu li a:hover::after {
   grid-row: 1/2;
   gap: 10%;
   align-items: center;
+  display: flex;
   justify-content: center;
   flex-direction: row;
 }

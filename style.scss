@@ -414,7 +414,7 @@ header {
                 -webkit-filter: grayscale(0);
               }
               h3{
-                color: #0b1d7b;
+                color: #132061d7;
                 margin-left: 13%;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
               }
@@ -553,6 +553,7 @@ header {
         grid-row: 1/2;
         gap: 10%;
         align-items: center;
+        display: flex;
         justify-content: center;
         flex-direction: row;
       }
@@ -563,6 +564,7 @@ header {
         grid-row: 1/2;
         gap: 10%;
         align-items: center;
+        display: flex;
         justify-content: center;
         flex-direction: row;
       }
