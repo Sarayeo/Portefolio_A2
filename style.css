@@ -14,7 +14,7 @@
   background-color: rgb(159, 201, 239);
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1400px) {
   body {
     padding-left: 10%;
     padding-right: 10%;
@@ -701,10 +701,14 @@ header .head .menu li a:hover::after {
   header .menu.responsive li {
     margin: 15px 0;
   }
+  body {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
   body .midle {
     padding-left: 25%;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   body .categories {
