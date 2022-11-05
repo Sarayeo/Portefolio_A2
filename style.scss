@@ -221,16 +221,22 @@ body{
   
   }
   .animate__animated.animate__fadeInDown {
-      --animate-duration: 2s;
-    }
-  .animate__animated.animate__backInLeft {
-       animation-delay: 2s;
       --animate-duration: 1s;
     }
-    .animate__animated.animate__fadeInUp{
-  
-      animation-delay: 4s;
+  .animate__animated.animate__backInLeft {
+       animation-delay: 1s;
     }
+  .animate__animated.animate__fadeInUp{
+  
+      animation-delay: 8s;
+  }
+  .animate__animated.animate__backInUp{
+    animation-delay: 11s;
+  }
+  .animate__animated .animate__zoomIn{
+    animation-delay: 8s;
+    
+  }
   
     .midle{
       padding-left: 35%;
@@ -955,8 +961,8 @@ body{
   }
   body{
   
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
 
     .presentation {
       padding-top: 5%;
@@ -1040,11 +1046,10 @@ body{
   }
 .animate__animated.animate__backInLeft {
      animation-delay: 2s;
-    --animate-duration: 1s;
+     --animate-duration: 2s;
   }
  .animate__animated.animate__fadeInUp{
-
-    animation-delay: 4s;
+    animation-delay: 7s;
   }
   
 

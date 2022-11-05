@@ -188,16 +188,23 @@ body .presentation .oursection .our_card:not(.active) {
   border-radius: 30px;
 }
 body .animate__animated.animate__fadeInDown {
-  --animate-duration: 2s;
-}
-body .animate__animated.animate__backInLeft {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
   --animate-duration: 1s;
 }
+body .animate__animated.animate__backInLeft {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
 body .animate__animated.animate__fadeInUp {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+body .animate__animated.animate__backInUp {
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+}
+body .animate__animated .animate__zoomIn {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 body .midle {
   padding-left: 35%;
@@ -833,8 +840,8 @@ body .resume img {
     height: 10px;
   }
   body {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   body .presentation {
     padding-top: 5%;
@@ -903,11 +910,11 @@ body .resume img {
   body .animate__animated.animate__backInLeft {
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
-    --animate-duration: 1s;
+    --animate-duration: 2s;
   }
   body .animate__animated.animate__fadeInUp {
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s;
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
   }
   body .midle {
     padding-left: 35%;
