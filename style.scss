@@ -363,6 +363,27 @@ header {
         justify-content: center;
         flex-direction: row;
         gap: 10%;
+        .sluppy{
+          h2{
+            margin-left: 20%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #484358;
+            font-weight:700;
+          }
+          h3{
+            margin-left: 40%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #484358;
+            font-weight:800;
+          }
+          p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight:500;
+            color: #484358;
+            margin-left: 15%;
+
+          }
+        }
         
 
         .sluppy .v{
@@ -372,6 +393,7 @@ header {
             border-radius: 18px;
             font-size: 22px;
             font-weight: bold;
+           
             a{
               
               text-decoration: none;
@@ -381,13 +403,23 @@ header {
                 margin-top: 10%;
                 margin-left: 23%;
                 border-radius: 18px;
+                opacity: 0.4;
+                filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+              }
+              img:hover {
+                opacity: 1;
+                transform: scale(1.2);
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
               }
               h3{
-                color: #d3ad65;
+                color: #0b1d7b;
                 margin-left: 13%;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
               }
             }
+           
             
           }
           .sluppy  .t{
@@ -406,10 +438,19 @@ header {
                 margin-top: 10%;
                 margin-left: 23%;
                 border-radius: 18px;
+                opacity: 0.4;
+                filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+              }
+              img:hover {
+                opacity: 1;
+                transform: scale(1.2);
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
               }
               h3{
-                color: #d3ad65;
-                margin-left: 13%;
+                color: #96953c;
+                margin-left: 7%;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
               }
             }
@@ -430,10 +471,19 @@ header {
                 margin-top: 10%;
                 margin-left: 23%;
                 border-radius: 18px;
+                opacity: 0.4;
+                filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+              }
+              img:hover {
+                opacity: 1;
+                transform: scale(1.2);
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
               }
               h3{
                 color: #d3ad65;
-                margin-left: 13%;
+                margin-left: 7%;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
               }
             }
@@ -456,6 +506,16 @@ header {
                 margin-top: 10%;
                 margin-left: 23%;
                 border-radius: 18px;
+                transform: scale(0.9);
+                opacity: 0.4;
+                filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+              }
+              img:hover {
+                opacity: 1;
+                transform: scale(1.2);
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
               }
               h3{
                 color: #d3ad65;

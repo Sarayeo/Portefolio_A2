@@ -311,6 +311,24 @@ header .head .menu li a:hover::after {
   flex-direction: row;
   gap: 10%;
 }
+#projects .slup .sluppy h2 {
+  margin-left: 20%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #484358;
+  font-weight: 700;
+}
+#projects .slup .sluppy h3 {
+  margin-left: 40%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #484358;
+  font-weight: 800;
+}
+#projects .slup .sluppy p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #484358;
+  margin-left: 15%;
+}
 #projects .slup .sluppy .v {
   width: 220px;
   height: 220px;
@@ -328,9 +346,18 @@ header .head .menu li a:hover::after {
   margin-top: 10%;
   margin-left: 23%;
   border-radius: 18px;
+  opacity: 0.4;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+#projects .slup .sluppy .v a img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 #projects .slup .sluppy .v a h3 {
-  color: #d3ad65;
+  color: #0b1d7b;
   margin-left: 13%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -351,10 +378,19 @@ header .head .menu li a:hover::after {
   margin-top: 10%;
   margin-left: 23%;
   border-radius: 18px;
+  opacity: 0.4;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+#projects .slup .sluppy .t a img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 #projects .slup .sluppy .t a h3 {
-  color: #d3ad65;
-  margin-left: 13%;
+  color: #96953c;
+  margin-left: 7%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #projects .slup .sluppy .u {
@@ -374,10 +410,19 @@ header .head .menu li a:hover::after {
   margin-top: 10%;
   margin-left: 23%;
   border-radius: 18px;
+  opacity: 0.4;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+#projects .slup .sluppy .u a img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 #projects .slup .sluppy .u a h3 {
   color: #d3ad65;
-  margin-left: 13%;
+  margin-left: 7%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #projects .slup .sluppy .s {
@@ -397,6 +442,16 @@ header .head .menu li a:hover::after {
   margin-top: 10%;
   margin-left: 23%;
   border-radius: 18px;
+  transform: scale(0.9);
+  opacity: 0.4;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+#projects .slup .sluppy .s a img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 #projects .slup .sluppy .s a h3 {
   color: #d3ad65;
