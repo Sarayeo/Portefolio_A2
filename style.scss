@@ -25,7 +25,7 @@ header {
   left: 0;
   right: 0;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 
   .head {
     display: flex;
@@ -184,11 +184,15 @@ header {
   }
 
 }
-.animate__animated.animate__fadeInUp {
+.animate__animated.animate__fadeInDown {
     --animate-duration: 3s;
   }
 .animate__animated.animate__backInLeft {
-    --animate-duration: 2s;
+    --animate-duration: 3s;
+  }
+  .animate__animated.animate__fadeInUp{
+
+    --animation-delay: min($numbers: 1);
   }
 
   .midle{
@@ -208,7 +212,7 @@ header {
   .cat{
     font-weight: 350;
     font-size: 20px;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     :nth-child(1) {
         color: #484358;
@@ -216,6 +220,7 @@ header {
         font-size: 17px;
         
       }
+     
   }
   .barre{
     top: 2px;
@@ -555,13 +560,34 @@ header {
       }
 
       :nth-of-type(2){
-        background-color: rgb(213, 34, 186);
+        display: flex;
+        justify-content: center;
         height: 100%;
         width: 80%;
         grid-column: 2/3;
         grid-row: 1/2;
         border: #0B0521 2px solid;
         border-radius: 35px;
+        
+        h2{
+            padding-top: 1.5rem;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        ::after {
+          position: absolute;
+          bottom: 2px;
+          right: 0;
+          content: "";
+          width: 40%;
+          height: 0px;
+          background-color: rgba(99, 176, 181, 0.763);
+          z-index: 5;
+          transition: 0.5s;
+        }
+        :hover::after {
+          height: 18vh;
+        }
       }
       :nth-of-type(3){
         height: 100%;
