@@ -312,36 +312,96 @@ header .head .menu li a:hover::after {
   gap: 10%;
 }
 #projects .slup .sluppy .v {
-  width: 209px;
-  height: 270px;
+  width: 220px;
+  height: 220px;
   background-color: #D7D699;
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
 }
+#projects .slup .sluppy .v a {
+  text-decoration: none;
+}
+#projects .slup .sluppy .v a img {
+  width: 117px;
+  height: 109px;
+  margin-top: 10%;
+  margin-left: 23%;
+  border-radius: 18px;
+}
+#projects .slup .sluppy .v a h3 {
+  color: #d3ad65;
+  margin-left: 13%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 #projects .slup .sluppy .t {
-  width: 230px;
-  height: 230px;
+  width: 220px;
+  height: 220px;
   background-color: #C4D3F5;
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
 }
+#projects .slup .sluppy .t a {
+  text-decoration: none;
+}
+#projects .slup .sluppy .t a img {
+  width: 117px;
+  height: 109px;
+  margin-top: 10%;
+  margin-left: 23%;
+  border-radius: 18px;
+}
+#projects .slup .sluppy .t a h3 {
+  color: #d3ad65;
+  margin-left: 13%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 #projects .slup .sluppy .u {
   background-color: #CFCFCF;
-  width: 217px;
-  height: 209px;
+  width: 220px;
+  height: 220px;
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
+}
+#projects .slup .sluppy .u a {
+  text-decoration: none;
+}
+#projects .slup .sluppy .u a img {
+  width: 117px;
+  height: 109px;
+  margin-top: 10%;
+  margin-left: 23%;
+  border-radius: 18px;
+}
+#projects .slup .sluppy .u a h3 {
+  color: #d3ad65;
+  margin-left: 13%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #projects .slup .sluppy .s {
   border-radius: 18px;
   font-size: 22px;
   font-weight: bold;
   background-color: #AAABC6;
-  width: 217px;
-  height: 209px;
+  width: 220px;
+  height: 220px;
+}
+#projects .slup .sluppy .s a {
+  text-decoration: none;
+}
+#projects .slup .sluppy .s a img {
+  width: 117px;
+  height: 109px;
+  margin-top: 10%;
+  margin-left: 23%;
+  border-radius: 18px;
+}
+#projects .slup .sluppy .s a h3 {
+  color: #d3ad65;
+  margin-left: 13%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .skills {
@@ -1060,7 +1120,7 @@ header .head .menu li a:hover::after {
     grid-row: 1/2;
   }
   body .presentation {
-    padding-top: 15%;
+    padding-top: 25%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1069,57 +1129,14 @@ header .head .menu li a:hover::after {
   }
   body .presentation h1 {
     color: #484358;
+    font-weight: 600;
+    font-size: 15px;
   }
   body .presentation h2 {
-    color: #484358;
+    display: none;
   }
   body .presentation .box {
-    height: 18vh;
-    width: 30%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 18vh;
-    position: absolute;
-    margin-left: 10%;
-    z-index: 1;
-    margin-top: 50%;
-  }
-  body .presentation .box :nth-child(1) {
-    border: #D7D699 2px solid;
-    display: flex;
-    justify-content: center;
-  }
-  body .presentation .box :nth-child(1) p {
-    padding-left: 10%;
-    padding-top: 10%;
-    font-size: 400;
-    color: #bd8f4d;
-  }
-  body .presentation .box :nth-child(2) {
-    background-color: #D7D699;
-    display: flex;
-    justify-content: center;
-  }
-  body .presentation .box :nth-child(2) h2 {
-    font-size: 600;
-    background-color: #D7D699;
-    margin-top: 15%;
-    color: rgb(255, 255, 255);
-  }
-  body .presentation .box .dos::after {
-    position: absolute;
-    bottom: 2px;
-    right: 0;
-    content: "";
-    width: 40%;
-    height: 0px;
-    background-color: #ebcfa8;
-    z-index: 5;
-    transition: 0.3s;
-  }
-  body .presentation .box .dos:hover::after {
-    height: 17.5vh;
+    display: none;
   }
   body .presentation .oursection {
     display: flex;
@@ -1127,16 +1144,17 @@ header .head .menu li a:hover::after {
     gap: 5%;
     padding: 3%;
     min-width: 200px;
-    max-width: 600px;
+    max-width: 500px;
     min-height: 150px;
     max-height: 350px;
-  }
-  body .presentation .oursection .our_card.active {
-    flex-grow: 1000;
-    transform: scale(1);
-    max-width: 300px;
-    margin: 0px;
-    border-radius: 20px;
+    /*.our_card.active {
+        flex-grow: 1000;
+        transform: scale(1);
+        max-width: 300px;
+        margin: 0px;
+        border-radius: 20px;
+
+      }*/
   }
   body .presentation .oursection .our_card {
     position: relative;
