@@ -13,7 +13,15 @@
 ::-webkit-scrollbar-thumb {
   background-color: rgb(159, 201, 239);
 }
+@media (min-width: 1600px) {
+  body{
+  
+    padding-left: 10%;
+    padding-right: 10%;
+   
+  }
 
+}
 
 header {
   display: flex;
