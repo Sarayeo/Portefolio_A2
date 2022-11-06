@@ -20,10 +20,9 @@
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 70px;
   position: fixed;
+  gap: 10%;
   z-index: 12;
   left: 0;
   right: 0;
@@ -32,7 +31,10 @@ header {
 }
 header .head {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  padding-left: 5%;
 }
 header .logo a {
   width: 30%;
@@ -1682,10 +1684,6 @@ footer .services .service3 .logo-perso-3 img {
   header {
     padding: 0 20px;
   }
-  body {
-    padding-left: 1%;
-    padding-right: 1%;
-  }
   body .presentation {
     padding-top: 25%;
     width: 100%;
@@ -1708,10 +1706,10 @@ footer .services .service3 .logo-perso-3 img {
   body .presentation .oursection {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 2%;
     padding: 3%;
     min-width: 200px;
-    max-width: 500px;
+    max-width: 100%;
     min-height: 150px;
     max-height: 350px;
     /*.our_card.active {
@@ -1736,32 +1734,31 @@ footer .services .service3 .logo-perso-3 img {
     border-radius: 18px;
   }
   body .midle {
-    padding-left: 35%;
+    padding-left: 10%;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  body .categories {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
   }
   body .categories .cat {
     display: none;
-    font-weight: 150;
-    font-size: 10px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  body .categories .cat :nth-child(1) {
-    color: #484358;
-  }
-  body .categories .barre {
-    top: 2px;
-    bottom: 2px;
-    right: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #0B0521;
+    /*
+      font-weight: 150;
+      font-size: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      :nth-child(1) {
+          color: #484358;
+
+        }
+
+    }
+    .barre{
+      top: 2px;
+      bottom: 2px;
+      right: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #0B0521;*/
   }
   body #projects .slup {
     display: flex;
@@ -1769,19 +1766,20 @@ footer .services .service3 .logo-perso-3 img {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     gap: 10%;
   }
   body #projects .slup .sluppy .v {
-    width: 209px;
-    height: 270px;
+    width: 217px;
+    height: 209px;
     background-color: #D7D699;
     border-radius: 18px;
     font-size: 22px;
     font-weight: bold;
   }
   body #projects .slup .sluppy .t {
-    width: 230px;
-    height: 230px;
+    width: 217px;
+    height: 209px;
     background-color: #C4D3F5;
     border-radius: 18px;
     font-size: 22px;
@@ -2187,7 +2185,7 @@ footer .services .service3 .logo-perso-3 img {
     grid-column: 3/4;
     grid-row: 1/2;
   }
-  .block {
+  body .block {
     margin-top: 5vh;
     display: flex;
     align-items: center;
@@ -2196,7 +2194,7 @@ footer .services .service3 .logo-perso-3 img {
     gap: 20px;
     padding: 10px 10px;
   }
-  .block .recipe {
+  body .block .recipe {
     width: 300px;
     height: 60vh;
     background-color: rgba(240, 181, 181, 0.6784313725);
@@ -2210,18 +2208,18 @@ footer .services .service3 .logo-perso-3 img {
     transition: 0.5s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  .block .recipe h1 {
+  body .block .recipe h1 {
     color: rgba(79, 1, 1, 0.942);
     font-size: 20px;
   }
-  .block .recipe img {
+  body .block .recipe img {
     width: 200px;
     height: 120px;
     border-radius: 2%;
     margin-bottom: 10px;
     margin-top: 10px;
   }
-  .block .performance {
+  body .block .performance {
     width: 300px;
     height: 70vh;
     background-color: rgba(240, 181, 181, 0.6784313725);
@@ -2235,15 +2233,15 @@ footer .services .service3 .logo-perso-3 img {
     transition: 0.5s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  .block .performance h1 {
+  body .block .performance h1 {
     color: rgba(79, 1, 1, 0.942);
     font-size: 18px;
   }
-  .block .performance h2 {
+  body .block .performance h2 {
     color: rgba(148, 86, 11, 0.942);
     font-size: 12px;
   }
-  .block .performance p {
+  body .block .performance p {
     color: rgba(148, 86, 11, 0.942);
     font-size: 10px;
   }
@@ -2328,12 +2326,18 @@ footer .services .service3 .logo-perso-3 img {
   }
   footer .services .service1 {
     margin-top: 4ex;
+    margin-left: 11ex;
   }
   footer .services .service2 {
     margin-top: 4ex;
+    margin-left: 6ex;
+  }
+  footer .services .service2 h1 {
+    margin-left: 10ex;
   }
   footer .services .service3 {
     margin-top: 4ex;
+    margin-left: 14ex;
   }
   footer .services .service3 .logo-perso {
     display: flex;
