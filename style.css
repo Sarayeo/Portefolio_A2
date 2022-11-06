@@ -2133,125 +2133,119 @@ footer .services .service3 .logo-perso-3 img {
     grid-column: 3/4;
     grid-row: 1/2;
   }
-}
-.toggle_menu {
-  display: flex;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.toggle_menu::before {
-  position: absolute;
-  content: "";
-  height: 3px;
-  width: 28px;
-  background-color: #484358;
-  border-radius: 6px;
-  box-shadow: 0 10px 0 #484358;
-  transform: translateY(-10px);
-  transition: 0.5s;
-}
-
-.toggle_menu.active::before {
-  transform: translateY(0) rotate(135deg);
-  box-shadow: 0 0 0 #484358;
-}
-
-.toggle_menu::after {
-  position: absolute;
-  content: "";
-  height: 3px;
-  width: 22px;
-  margin-left: 5px;
-  background-color: #D7D699;
-  border-radius: 6px;
-  transform: translateY(10px);
-  transition: 0.5s;
-}
-
-.toggle_menu.active::after {
-  transform: translateY(0) rotate(-135deg);
-}
-
-header .menu.responsive {
-  display: flex;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex-direction: column;
-}
-header .menu.responsive li {
-  margin: 15px 0;
-}
-
-footer {
-  background-color: #8ca9ea;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 15%;
-  opacity: 0.7;
-}
-footer h1 {
-  color: rgb(11, 5, 33);
-  font-size: larger;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-footer p {
-  color: rgb(215, 214, 153);
-}
-footer p:hover {
-  color: #717d06;
-}
-footer .services {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-footer .services .service1 {
-  margin-top: 4ex;
-}
-footer .services .service2 {
-  margin-top: 4ex;
-}
-footer .services .service3 {
-  margin-top: 4ex;
-}
-footer .services .service3 .logo-perso {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-footer .services .service3 .logo-perso img {
-  width: 40px;
-  height: 40px;
-}
-footer .services .service3 .logo-perso-2 {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-footer .services .service3 .logo-perso-2 img {
-  width: 40px;
-  height: 40px;
-}
-footer .services .service3 .logo-perso-3 {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-footer .services .service3 .logo-perso-3 img {
-  width: 40px;
-  height: 40px;
+  .toggle_menu {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .toggle_menu::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 28px;
+    background-color: #484358;
+    border-radius: 6px;
+    box-shadow: 0 10px 0 #484358;
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+  .toggle_menu.active::before {
+    transform: translateY(0) rotate(135deg);
+    box-shadow: 0 0 0 #484358;
+  }
+  .toggle_menu::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 22px;
+    margin-left: 5px;
+    background-color: #D7D699;
+    border-radius: 6px;
+    transform: translateY(10px);
+    transition: 0.5s;
+  }
+  .toggle_menu.active::after {
+    transform: translateY(0) rotate(-135deg);
+  }
+  header .menu.responsive {
+    display: flex;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+  }
+  header .menu.responsive li {
+    margin: 15px 0;
+  }
+  footer {
+    background-color: #8ca9ea;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15%;
+    opacity: 0.7;
+  }
+  footer h1 {
+    color: rgb(11, 5, 33);
+    font-size: larger;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  footer p {
+    color: rgb(215, 214, 153);
+  }
+  footer p:hover {
+    color: #717d06;
+  }
+  footer .services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .services .service1 {
+    margin-top: 4ex;
+  }
+  footer .services .service2 {
+    margin-top: 4ex;
+  }
+  footer .services .service3 {
+    margin-top: 4ex;
+  }
+  footer .services .service3 .logo-perso {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  footer .services .service3 .logo-perso img {
+    width: 40px;
+    height: 40px;
+  }
+  footer .services .service3 .logo-perso-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  footer .services .service3 .logo-perso-2 img {
+    width: 40px;
+    height: 40px;
+  }
+  footer .services .service3 .logo-perso-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  footer .services .service3 .logo-perso-3 img {
+    width: 40px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
