@@ -844,6 +844,10 @@ body .block .recipe h1 {
   color: rgba(9, 7, 54, 0.942);
   font-size: 30px;
 }
+body .block .recipe h2 {
+  color: rgba(148, 86, 11, 0.942);
+  font-size: 20px;
+}
 body .block .recipe img {
   width: 100px;
   height: 100px;
@@ -1714,10 +1718,13 @@ footer .services .service3 .logo-perso-3 img {
   }
 }
 @media (max-width: 840px) {
-  header .menu {
+  body {
+    width: 100%;
+  }
+  body header .menu {
     display: none;
   }
-  header {
+  body header {
     padding: 0 20px;
   }
   body .presentation {
@@ -2293,17 +2300,59 @@ footer .services .service3 .logo-perso-3 img {
   body .block .performance p li {
     font-size: 10px;
   }
-  .toggle_menu {
+  body #experience {
+    width: 90%;
+    height: 100%;
     display: flex;
+    justify-self: start;
+    flex-direction: column;
+  }
+  body #experience .room {
+    width: 100%;
+    height: 70vh;
+  }
+  body #experience .room h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 700;
+    font-weight: 500;
+    color: #020205;
+  }
+  body #experience .room p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 500;
+    font-weight: 300;
+    color: #020205;
+  }
+  body #experience .resume img {
+    border: #020205 3px solid;
+    margin-top: 10em;
+    margin-left: 0.5em;
+    width: 100%;
+    height: 60vh;
+  }
+  body #experience button {
+    border: #0B0521 2px solid;
+    width: 30%;
+    height: 15%;
+    margin-left: -1em;
+    border-radius: 10px;
+  }
+  body #experience button a {
+    text-decoration: none;
+    color: #0B0521;
+  }
+  body .toggle_menu {
     height: 40px;
     width: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     cursor: pointer;
   }
-  .toggle_menu::before {
+  body .toggle_menu::before {
     position: absolute;
     content: "";
     height: 3px;
@@ -2314,11 +2363,11 @@ footer .services .service3 .logo-perso-3 img {
     transform: translateY(-10px);
     transition: 0.5s;
   }
-  .toggle_menu.active::before {
+  body .toggle_menu.active::before {
     transform: translateY(0) rotate(135deg);
     box-shadow: 0 0 0 #484358;
   }
-  .toggle_menu::after {
+  body .toggle_menu::after {
     position: absolute;
     content: "";
     height: 3px;
@@ -2329,10 +2378,10 @@ footer .services .service3 .logo-perso-3 img {
     transform: translateY(10px);
     transition: 0.5s;
   }
-  .toggle_menu.active::after {
+  body .toggle_menu.active::after {
     transform: translateY(0) rotate(-135deg);
   }
-  header .menu.responsive {
+  body header .menu.responsive {
     display: flex;
     position: absolute;
     top: 50px;
@@ -2345,72 +2394,72 @@ footer .services .service3 .logo-perso-3 img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
   }
-  header .menu.responsive li {
+  body header .menu.responsive li {
     margin: 15px 0;
   }
-  footer {
+  body footer {
     background-color: #8ca9ea;
     display: flex;
     flex-wrap: wrap;
     margin-top: 15%;
     opacity: 0.7;
   }
-  footer h1 {
+  body footer h1 {
     color: rgb(11, 5, 33);
     font-size: larger;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-  footer p {
+  body footer p {
     color: rgb(215, 214, 153);
   }
-  footer p:hover {
+  body footer p:hover {
     color: #717d06;
   }
-  footer .services {
+  body footer .services {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  footer .services .service1 {
+  body footer .services .service1 {
     margin-top: 4ex;
     margin-left: 11ex;
   }
-  footer .services .service2 {
+  body footer .services .service2 {
     margin-top: 4ex;
     margin-left: 6ex;
   }
-  footer .services .service2 h1 {
+  body footer .services .service2 h1 {
     margin-left: 10ex;
   }
-  footer .services .service3 {
+  body footer .services .service3 {
     margin-top: 4ex;
     margin-left: 14ex;
   }
-  footer .services .service3 .logo-perso {
+  body footer .services .service3 .logo-perso {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
-  footer .services .service3 .logo-perso img {
+  body footer .services .service3 .logo-perso img {
     width: 40px;
     height: 40px;
   }
-  footer .services .service3 .logo-perso-2 {
+  body footer .services .service3 .logo-perso-2 {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
-  footer .services .service3 .logo-perso-2 img {
+  body footer .services .service3 .logo-perso-2 img {
     width: 40px;
     height: 40px;
   }
-  footer .services .service3 .logo-perso-3 {
+  body footer .services .service3 .logo-perso-3 {
     display: flex;
     flex-direction: row;
     gap: 10px;
   }
-  footer .services .service3 .logo-perso-3 img {
+  body footer .services .service3 .logo-perso-3 img {
     width: 40px;
     height: 40px;
   }
