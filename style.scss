@@ -843,29 +843,33 @@ body{
           grid-row: 1/2;
           border-radius: 35px;
 
-          button{
-            border-radius: 30px;
-            width: 80%;
-            background-color: #fff;
-            margin-left: 10%;
-            border: 3px solid #0b0521c8;
-            transition: background-color 0.3s, color 0.3s,border 0.3s;
-
-            a{
-              text-decoration: none;
-              h2{
-                padding-top: 1rem;
-                font-weight: 700;
-                color: #D7D699;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          a{
+            text-decoration: none;
+    
+            button{
+              height: 60px;
+              border-radius: 20px;
+              width: 15em;
+              background-color: #fff;
+              margin-top: 10%;
+              margin-left: -10px;
+              border: 3px solid #0b0521c8;
+              transition: background-color 0.3s, color 0.3s,border 0.3s;
+                
+                h2{
+                  padding-top: 1.5rem;
+                  font-weight: 700;
+                  color: #D7D699;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              }
+              :hover {
+              background-color: #0b0521c8;
+              border-radius: 20px;
+              border: 3px solid #D7D699;
+              color: white;
+              }
             }
-            }
-            :hover {
-            background-color: #0b0521c8;
-            border-radius: 30px;
-            border: 3px solid #D7D699;
-	          color: white;
-            }
+    
           }
           
          
@@ -2491,32 +2495,36 @@ display: block;
       grid-column: 2/3;
       grid-row: 1/2;
       
-      button{
-        height: 100px;
-        border-radius: 30px;
-        width: 150px;
-        background-color: #fff;
-        margin-top: 50%;
-        margin-left: -360%;
-        border: 3px solid #0b0521c8;
-        transition: background-color 0.3s, color 0.3s,border 0.3s;
+      a{
+        text-decoration: none;
 
-        a{
-          text-decoration: none;
-          h2{
-            padding-top: 2rem;
-            font-weight: 700;
-            color: #D7D699;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        button{
+          height: 60px;
+          border-radius: 20px;
+          width: 15em;
+          background-color: #fff;
+          padding-top: 60%;
+          margin-top: 40%;
+          margin-left: -17rem;
+          border: 3px solid #0b0521c8;
+          transition: background-color 0.3s, color 0.3s,border 0.3s;
+            
+            h2{
+              padding-top: 1.5rem;
+              font-weight: 700;
+              color: #D7D699;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+          :hover {
+          background-color: #0b0521c8;
+          border-radius: 20px;
+          border: 3px solid #D7D699;
+          color: white;
+          }
         }
-        }
-        :hover {
-        background-color: #0b0521c8;
-        border-radius: 30px;
-        border: 3px solid #D7D699;
-        color: white;
-        }
+
       }
+     
     }
     :nth-of-type(3){
       height: 100%;
@@ -2524,6 +2532,12 @@ display: block;
       grid-row: 1/2;
     }
   
+}
+.ligne4{
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  margin-top: -20%;
 }
 }
 .block{
@@ -2690,13 +2704,11 @@ transform: translateY(0) rotate(-135deg);
 }    
 header .menu.responsive {
 display: flex;
-position: absolute;
+position: fixed;
 top: 50px;
 left: 0;
 width: 100%;
-display: flex;
 align-items: center;
-justify-content: center;
 background-color: #fff;
 box-shadow: 0 0 10px rgba(0,0,0,0.1);
 flex-direction: column;

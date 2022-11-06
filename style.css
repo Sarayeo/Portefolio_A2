@@ -742,26 +742,28 @@ body .about_me .rowd :nth-of-type(2) {
   grid-row: 1/2;
   border-radius: 35px;
 }
-body .about_me .rowd :nth-of-type(2) button {
-  border-radius: 30px;
-  width: 80%;
+body .about_me .rowd :nth-of-type(2) a {
+  text-decoration: none;
+}
+body .about_me .rowd :nth-of-type(2) a button {
+  height: 60px;
+  border-radius: 20px;
+  width: 15em;
   background-color: #fff;
-  margin-left: 10%;
+  margin-top: 10%;
+  margin-left: -10px;
   border: 3px solid rgba(11, 5, 33, 0.7843137255);
   transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
-body .about_me .rowd :nth-of-type(2) button a {
-  text-decoration: none;
-}
-body .about_me .rowd :nth-of-type(2) button a h2 {
-  padding-top: 1rem;
+body .about_me .rowd :nth-of-type(2) a button h2 {
+  padding-top: 1.5rem;
   font-weight: 700;
   color: #D7D699;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body .about_me .rowd :nth-of-type(2) button :hover {
+body .about_me .rowd :nth-of-type(2) a button :hover {
   background-color: rgba(11, 5, 33, 0.7843137255);
-  border-radius: 30px;
+  border-radius: 20px;
   border: 3px solid #D7D699;
   color: white;
 }
@@ -2198,28 +2200,29 @@ footer .services .service3 .logo-perso-3 img {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  body .about_me .rowd :nth-of-type(2) button {
-    height: 100px;
-    border-radius: 30px;
-    width: 150px;
+  body .about_me .rowd :nth-of-type(2) a {
+    text-decoration: none;
+  }
+  body .about_me .rowd :nth-of-type(2) a button {
+    height: 60px;
+    border-radius: 20px;
+    width: 15em;
     background-color: #fff;
-    margin-top: 50%;
-    margin-left: -360%;
+    padding-top: 60%;
+    margin-top: 40%;
+    margin-left: -17rem;
     border: 3px solid rgba(11, 5, 33, 0.7843137255);
     transition: background-color 0.3s, color 0.3s, border 0.3s;
   }
-  body .about_me .rowd :nth-of-type(2) button a {
-    text-decoration: none;
-  }
-  body .about_me .rowd :nth-of-type(2) button a h2 {
-    padding-top: 2rem;
+  body .about_me .rowd :nth-of-type(2) a button h2 {
+    padding-top: 1.5rem;
     font-weight: 700;
     color: #D7D699;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-  body .about_me .rowd :nth-of-type(2) button :hover {
+  body .about_me .rowd :nth-of-type(2) a button :hover {
     background-color: rgba(11, 5, 33, 0.7843137255);
-    border-radius: 30px;
+    border-radius: 20px;
     border: 3px solid #D7D699;
     color: white;
   }
@@ -2227,6 +2230,12 @@ footer .services .service3 .logo-perso-3 img {
     height: 100%;
     grid-column: 3/4;
     grid-row: 1/2;
+  }
+  body .about_me .ligne4 {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    margin-top: -20%;
   }
   body .block {
     display: flex;
@@ -2383,13 +2392,11 @@ footer .services .service3 .logo-perso-3 img {
   }
   body header .menu.responsive {
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 0;
     width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
