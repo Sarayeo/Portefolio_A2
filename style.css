@@ -1621,14 +1621,14 @@ footer .services .service3 .logo-perso-3 img {
     height: 40px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 840px) {
   header .menu {
     display: none;
   }
   header {
     padding: 0 20px;
   }
-  .toggle_menu {
+  header .toggle_menu {
     display: flex;
     height: 40px;
     width: 40px;
@@ -1638,7 +1638,7 @@ footer .services .service3 .logo-perso-3 img {
     position: relative;
     cursor: pointer;
   }
-  .toggle_menu::before {
+  header .toggle_menu::before {
     position: absolute;
     content: "";
     height: 3px;
@@ -1650,11 +1650,11 @@ footer .services .service3 .logo-perso-3 img {
     transform: translateY(-10px);
     transition: 0.3s;
   }
-  .toggle_menu.active::before {
+  header .toggle_menu.active::before {
     transform: translateY(0) rotate(135deg);
     box-shadow: 0 0 0 #484358;
   }
-  .toggle_menu::after {
+  header .toggle_menu::after {
     position: absolute;
     content: "";
     height: 3px;
@@ -1665,7 +1665,7 @@ footer .services .service3 .logo-perso-3 img {
     transform: translateY(10px);
     transition: 0.5s;
   }
-  .toggle_menu.active::after {
+  header .toggle_menu.active::after {
     transform: translateY(0) rotate(-135deg);
   }
   header .menu.responsive {
@@ -1685,8 +1685,57 @@ footer .services .service3 .logo-perso-3 img {
     margin: 15px 0;
   }
   body {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  body .presentation {
+    padding-top: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body .presentation h1 {
+    color: #484358;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  body .presentation h2 {
+    display: none;
+  }
+  body .presentation .box {
+    display: none;
+  }
+  body .presentation .oursection {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    padding: 3%;
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 150px;
+    max-height: 350px;
+    /*.our_card.active {
+        flex-grow: 1000;
+        transform: scale(1);
+        max-width: 300px;
+        margin: 0px;
+        border-radius: 20px;
+
+      }*/
+  }
+  body .presentation .oursection .our_card {
+    position: relative;
+    overflow: hidden;
+    min-width: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+  body .presentation .oursection .our_card:not(.active) {
+    flex-grow: 1;
+    border-radius: 18px;
   }
   body .midle {
     padding-left: 35%;
@@ -1695,12 +1744,9 @@ footer .services .service3 .logo-perso-3 img {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
   body .categories {
-    width: 60%;
+    width: 20%;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
     flex-direction: row;
-    padding-left: 30%;
   }
   body .categories .cat {
     font-weight: 150;
@@ -1759,17 +1805,17 @@ footer .services .service3 .logo-perso-3 img {
     height: 209px;
   }
   body .skills {
-    height: 100vh;
-    width: 95%;
+    height: 120vh;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40vh 60vh;
+    grid-template-rows: 20vh 20vh;
   }
   body .skills .haut {
-    height: 100%;
-    grid-column: 1/3;
-    grid-row: 1/2;
+    height: 40vh;
+    grid-column: 1/2;
+    grid-row: 1/3;
     flex-direction: column;
     display: grid;
     grid-template-columns: 100%;
@@ -1780,6 +1826,7 @@ footer .services .service3 .logo-perso-3 img {
     grid-column: 1/2;
     grid-row: 1/2;
     gap: 10%;
+    margin-left: 3%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -1789,72 +1836,165 @@ footer .services .service3 .logo-perso-3 img {
     grid-column: 1/2;
     grid-row: 2/3;
     gap: 10%;
+    margin-left: 5%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
   body .skills .bas {
-    height: 100%;
-    grid-column: 1/3;
-    grid-row: 2/3;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+  }
+  body .skills .bas .skills__col {
+    height: 40vh;
+    margin-top: 60%;
+    margin-left: 0%;
+    margin-bottom: 10%;
+    gap: 10%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30vh 30vh;
   }
-  body .skills .bas .skills__list-ico img {
-    border: #0B0521 2px solid;
+  body .skills .bas .skills__col .be {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  body .skills .bas .skills__col .be .skills__list-icoa img {
+    border: #020205 1px solid;
     border-radius: 50%;
     width: 40px;
     height: 40px;
   }
+  body .skills .bas .skills__col .be .Laura {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body .skills .bas .skills__col .be .Laura .skills__list-title {
+    color: #484358;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  body .skills .bas .skills__col .be .Laura .skills__list-desc {
+    color: #484358;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  body .skills .bas .skills__col .my {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: -3%;
+    gap: 10px;
+  }
+  body .skills .bas .skills__col .my .skills__list-icob img {
+    border: #020205 1px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  body .skills .bas .skills__col .my .aime {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body .skills .bas .skills__col .my .aime .skills__list-title {
+    color: #484358;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  body .skills .bas .skills__col .my .aime .skills__list-desc {
+    color: #484358;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  body .skills .bas .skills__col .way {
+    display: flex;
+    justify-content: center;
+    margin-left: -3%;
+    gap: 10px;
+  }
+  body .skills .bas .skills__col .way .skills__list-icoc img {
+    border: #020205 1px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  body .skills .bas .skills__col .way .les_cookies {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body .skills .bas .skills__col .way .les_cookies .skills__list-title {
+    color: #484358;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  body .skills .bas .skills__col .way .les_cookies .skills__list-desc {
+    color: #484358;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
   body .skills .bas .container {
-    width: 600px;
-    height: 400px;
-    position: relative;
-    margin: 30px;
+    height: 750px;
+    width: 300px;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   body .skills .bas .container .boxe {
-    width: 95%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    border: 3px black solid;
+    border: 3px solid #AAABC6;
     opacity: 0.7;
     gap: 5px;
   }
   body .skills .bas .container .boxe h1 {
     align-content: initial;
-    padding-top: 18%;
-    padding-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 2%;
   }
   body .skills .bas .container .boxe img {
     border: #0B0521 2px solid;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
   }
   body .skills .bas .container .boxi {
-    width: 50%;
-    height: 30%;
-    position: absolute;
-    top: -3em;
-    left: 10em;
-    opacity: 1;
-    z-index: 5;
-    background: #D7D699;
-  }
-  body .skills .bas .container .boxi h1 {
-    align-content: initial;
-    margin-left: 20%;
-    margin-top: 10%;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    display: none;
+    /* width: 50%;
+     height: 30%;
+     position: absolute;
+     top: -5em;
+     left: 10em;
+     opacity: 1;
+     z-index: 5;
+     background: #D7D699;
+
+     h1{
+         align-content: initial;
+         margin-left: 20%;
+         margin-top: 10%;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-size: 40px;
+       }*/
   }
   body .about_me {
-    height: 120vh;
+    height: 170vh;
     width: 100%;
     margin: 0 auto;
     padding: 3%;
@@ -1948,8 +2088,10 @@ footer .services .service3 .logo-perso-3 img {
     height: 2px;
     width: 100%;
     background-color: black;
+    margin-top: 20%;
   }
   body .about_me .rowc {
+    margin-top: 5%;
     display: grid;
     width: 100%;
     grid-template-columns: 100%;
@@ -1995,7 +2137,7 @@ footer .services .service3 .logo-perso-3 img {
     height: 2px;
     width: 100%;
     background-color: black;
-    margin-top: 25%;
+    margin-top: 40%;
   }
   body .about_me .rowd {
     display: grid;
@@ -2013,83 +2155,97 @@ footer .services .service3 .logo-perso-3 img {
     display: flex;
     justify-content: center;
     height: 100%;
-    width: 80%;
     grid-column: 2/3;
     grid-row: 1/2;
-    border: #0B0521 2px solid;
-    border-radius: 35px;
   }
-  body .about_me .rowd :nth-of-type(2) h2 {
-    padding-top: 1.5rem;
+  body .about_me .rowd :nth-of-type(2) button {
+    height: 100px;
+    border-radius: 30px;
+    width: 150px;
+    background-color: #fff;
+    margin-top: 50%;
+    margin-left: -360%;
+    border: 3px solid rgba(11, 5, 33, 0.7843137255);
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+  body .about_me .rowd :nth-of-type(2) button a {
+    text-decoration: none;
+  }
+  body .about_me .rowd :nth-of-type(2) button a h2 {
+    padding-top: 2rem;
     font-weight: 700;
+    color: #D7D699;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-  body .about_me .rowd :nth-of-type(2) ::after {
-    position: absolute;
-    bottom: 2px;
-    right: 0;
-    content: "";
-    width: 40%;
-    height: 0px;
-    background-color: rgba(99, 176, 181, 0.763);
-    z-index: 5;
-    transition: 0.5s;
-  }
-  body .about_me .rowd :nth-of-type(2) :hover::after {
-    height: 18vh;
+  body .about_me .rowd :nth-of-type(2) button :hover {
+    background-color: rgba(11, 5, 33, 0.7843137255);
+    border-radius: 30px;
+    border: 3px solid #D7D699;
+    color: white;
   }
   body .about_me .rowd :nth-of-type(3) {
     height: 100%;
     grid-column: 3/4;
     grid-row: 1/2;
   }
-  body .presentation {
-    padding-top: 25%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  body .presentation h1 {
-    color: #484358;
-    font-weight: 600;
-    font-size: 15px;
-  }
-  body .presentation h2 {
-    display: none;
-  }
-  body .presentation .box {
-    display: none;
-  }
-  body .presentation .oursection {
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    padding: 3%;
-    min-width: 200px;
-    max-width: 500px;
-    min-height: 150px;
-    max-height: 350px;
-    /*.our_card.active {
-        flex-grow: 1000;
-        transform: scale(1);
-        max-width: 300px;
-        margin: 0px;
-        border-radius: 20px;
-
-      }*/
-  }
-  body .presentation .oursection .our_card {
-    position: relative;
-    overflow: hidden;
-    min-width: 100px;
-    margin: 10px;
-    cursor: pointer;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-  }
-  body .presentation .oursection .our_card:not(.active) {
-    flex-grow: 1;
-    border-radius: 18px;
-  }
+}
+footer {
+  background-color: #8ca9ea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 15%;
+  opacity: 0.7;
+}
+footer h1 {
+  color: rgb(11, 5, 33);
+  font-size: larger;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+footer p {
+  color: rgb(215, 214, 153);
+}
+footer p:hover {
+  color: #717d06;
+}
+footer .services {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .services .service1 {
+  margin-top: 4ex;
+}
+footer .services .service2 {
+  margin-top: 4ex;
+}
+footer .services .service3 {
+  margin-top: 4ex;
+}
+footer .services .service3 .logo-perso {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .services .service3 .logo-perso img {
+  width: 40px;
+  height: 40px;
+}
+footer .services .service3 .logo-perso-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .services .service3 .logo-perso-2 img {
+  width: 40px;
+  height: 40px;
+}
+footer .services .service3 .logo-perso-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+footer .services .service3 .logo-perso-3 img {
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */
