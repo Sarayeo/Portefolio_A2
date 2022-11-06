@@ -776,11 +776,33 @@ body .about_me .ligne4 {
   background-color: black;
   margin-top: 5%;
 }
-body .resume img {
-  padding-left: 20%;
-  padding-right: 20%;
+body #experience {
   width: 100%;
-  height: 150vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  padding-left: 10%;
+}
+body #experience .room {
+  width: 40%;
+  height: 100vh;
+}
+body #experience .room h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 900;
+  font-weight: 700;
+  color: #020205;
+}
+body #experience .room p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 700;
+  font-weight: 500;
+  color: #020205;
+}
+body #experience .resume img {
+  border: #020205 2px solid;
+  width: 100%;
+  height: 100vh;
 }
 body .block {
   display: flex;
@@ -2186,7 +2208,6 @@ footer .services .service3 .logo-perso-3 img {
     grid-row: 1/2;
   }
   body .block {
-    margin-top: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2197,40 +2218,50 @@ footer .services .service3 .logo-perso-3 img {
   body .block .recipe {
     width: 300px;
     height: 60vh;
-    background-color: rgba(240, 181, 181, 0.6784313725);
+    background-color: #C4D3F5;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 5px;
+    margin-top: 25%;
     margin-bottom: 15px;
+    border-radius: 20px;
     transition: 0.5s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   body .block .recipe h1 {
-    color: rgba(79, 1, 1, 0.942);
+    color: #0B0521;
     font-size: 20px;
   }
+  body .block .recipe h2 {
+    color: #cbb12b;
+    font-size: 15px;
+  }
+  body .block .recipe p {
+    font-size: 12px;
+  }
+  body .block .recipe p ul {
+    font-size: 10px;
+  }
   body .block .recipe img {
-    width: 200px;
-    height: 120px;
-    border-radius: 2%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    margin-top: 5%;
   }
   body .block .performance {
     width: 300px;
-    height: 70vh;
-    background-color: rgba(240, 181, 181, 0.6784313725);
-    padding: 20px;
+    height: 110vh;
+    background-color: #D7D699;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 25%;
     margin-bottom: 15px;
     transition: 0.5s;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   body .block .performance h1 {
@@ -2243,6 +2274,9 @@ footer .services .service3 .logo-perso-3 img {
   }
   body .block .performance p {
     color: rgba(148, 86, 11, 0.942);
+    font-size: 10px;
+  }
+  body .block .performance p li {
     font-size: 10px;
   }
   .toggle_menu {
@@ -2286,7 +2320,7 @@ footer .services .service3 .logo-perso-3 img {
   }
   header .menu.responsive {
     display: flex;
-    position: fixed;
+    position: absolute;
     top: 50px;
     left: 0;
     width: 100%;
