@@ -783,6 +783,60 @@ body .resume img {
   width: 100%;
   height: 150vh;
 }
+body .block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 10%;
+}
+body .block .recipe {
+  width: 45%;
+  height: 80vh;
+  background-color: #99d7c7;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+  transition: 0.5s;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body .block .recipe h1 {
+  color: rgba(9, 7, 54, 0.942);
+  font-size: 30px;
+}
+body .block .recipe img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+body .block .performance {
+  width: 45%;
+  height: 80vh;
+  background-color: #D7D699;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+  transition: 0.5s;
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body .block .performance h1 {
+  color: rgba(79, 1, 1, 0.942);
+  font-size: 30px;
+}
+body .block .performance h2 {
+  color: rgba(148, 86, 11, 0.942);
+  font-size: 20px;
+}
 
 footer {
   background-color: #8ca9ea;
@@ -2132,6 +2186,66 @@ footer .services .service3 .logo-perso-3 img {
     height: 100%;
     grid-column: 3/4;
     grid-row: 1/2;
+  }
+  .block {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 10px;
+  }
+  .block .recipe {
+    width: 300px;
+    height: 60vh;
+    background-color: rgba(240, 181, 181, 0.6784313725);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .block .recipe h1 {
+    color: rgba(79, 1, 1, 0.942);
+    font-size: 20px;
+  }
+  .block .recipe img {
+    width: 200px;
+    height: 120px;
+    border-radius: 2%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .block .performance {
+    width: 300px;
+    height: 70vh;
+    background-color: rgba(240, 181, 181, 0.6784313725);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .block .performance h1 {
+    color: rgba(79, 1, 1, 0.942);
+    font-size: 18px;
+  }
+  .block .performance h2 {
+    color: rgba(148, 86, 11, 0.942);
+    font-size: 12px;
+  }
+  .block .performance p {
+    color: rgba(148, 86, 11, 0.942);
+    font-size: 10px;
   }
   .toggle_menu {
     display: flex;
