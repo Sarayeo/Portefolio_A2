@@ -800,8 +800,9 @@ body #experience .room h1 {
 body #experience .room p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 700;
-  font-weight: 500;
-  color: #020205;
+  font-weight: 400;
+  padding-top: 3%;
+  color: rgba(23, 23, 41, 0.8117647059);
 }
 body #experience .resume img {
   border: #020205 2px solid;
@@ -1660,6 +1661,7 @@ footer .services .service3 .logo-perso-3 img {
   }
   footer {
     background-color: #8ca9ea;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
