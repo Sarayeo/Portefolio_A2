@@ -39,22 +39,24 @@ header {
   .head {
     display: flex;
     width: 100%;
+  }
 
     .logo  {
-        width: 30%;
-        color: rgb(11, 5, 33);
-        font-weight: 700;
-        font-size: 25px;
-        padding: 0 10%;
-        text-decoration: none;
-      }
-
-      .logo span {
-        color: rgb(215, 214, 153);
+      
         a{
+          width: 30%;
+          color: rgb(11, 5, 33);
+          font-weight: 700;
+          font-size: 25px;
+          padding: 0 10%;
           text-decoration: none;
+          
+        }
+        span {
+          color: rgb(215, 214, 153);
         }
       }
+
 
     .menu {
         width: 70%;
@@ -89,7 +91,6 @@ header {
               a:hover::after {
                 height: 10px;
               }
-          }
       }
   }
 }
@@ -924,7 +925,7 @@ body{
             margin-top: 10px;
         }
         p{
-        
+          color: rgba(9, 7, 54, 0.942);
         }
     }
     .performance{

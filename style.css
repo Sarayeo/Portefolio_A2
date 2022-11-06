@@ -34,7 +34,7 @@ header .head {
   display: flex;
   width: 100%;
 }
-header .head .logo {
+header .logo a {
   width: 30%;
   color: rgb(11, 5, 33);
   font-weight: 700;
@@ -42,24 +42,21 @@ header .head .logo {
   padding: 0 10%;
   text-decoration: none;
 }
-header .head .logo span {
+header .logo span {
   color: rgb(215, 214, 153);
 }
-header .head .logo span a {
-  text-decoration: none;
-}
-header .head .menu {
+header .menu {
   width: 70%;
   display: flex;
   justify-content: space-between;
   gap: 50px;
   padding-right: 5%;
 }
-header .head .menu li {
+header .menu li {
   margin: 0 15px;
   list-style: none;
 }
-header .head .menu li a {
+header .menu li a {
   font-weight: 350;
   font-size: 20px;
   -webkit-text-decoration: 0;
@@ -67,7 +64,7 @@ header .head .menu li a {
   color: rgb(11, 5, 33);
   position: relative;
 }
-header .head .menu li a::after {
+header .menu li a::after {
   position: absolute;
   bottom: 2px;
   right: 0;
@@ -77,7 +74,7 @@ header .head .menu li a::after {
   background-color: rgba(215, 214, 153, 0.7);
   transition: 0.5s;
 }
-header .head .menu li a:hover::after {
+header .menu li a:hover::after {
   height: 10px;
 }
 
@@ -814,6 +811,9 @@ body .block .recipe img {
   height: 100px;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+body .block .recipe p {
+  color: rgba(9, 7, 54, 0.942);
 }
 body .block .performance {
   width: 45%;
