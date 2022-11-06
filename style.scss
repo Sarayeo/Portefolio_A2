@@ -109,7 +109,6 @@ header {
     width: 100%;
 }
 */
-
 body{
   .presentation {
     padding-top: 5%;
@@ -233,14 +232,10 @@ body{
     }
   .animate__animated.animate__fadeInUp{
   
-      animation-delay: 8s;
+      animation-delay: 5s;
   }
   .animate__animated.animate__backInUp{
-    animation-delay: 11s;
-  }
-  .animate__animated .animate__zoomIn{
-    animation-delay: 8s;
-    
+    animation-delay: 7s;
   }
   
     .midle{
@@ -280,8 +275,6 @@ body{
     
     }
   }
-  
-  
   #projects{
   
       .slup {
@@ -454,7 +447,6 @@ body{
         }
   
   }
-   
   .skills{
     height: 100vh;
     width: 95%;
@@ -671,9 +663,6 @@ body{
       }
     
     }
-  
-  
-  
   .about_me {
     height: 120vh;
     width: 100%;
@@ -792,8 +781,8 @@ body{
           img{
               margin-top:15%; 
               margin-left: 20%;
-              width: 30%;
-              height: 13vh;
+              width: 23%;
+              height: 18vh;
               transform: rotate(-13deg);
               
              }
@@ -887,36 +876,83 @@ body{
         }
       
     }
+    .ligne4{
+      height: 2px;
+      width: 100%;
+      background-color: black;
+      margin-top: 5%;
+    }
   }
-  
   .resume img{
     padding-left: 20%; 
     padding-right: 20%;
     width: 100%;
     height: 150vh;
   }
-
-  footer {
-    margin: 0;
-    padding: 20px;
-    background-color: rgb(4, 4, 44);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    h3 {
-      color: var(--violet);
-    }
-    p{
-      cursor: pointer;
-      color: #ccc;
-    }
-    p:hover {
-      color: white;
-    }
-  } 
-
 }
+footer {
+  background-color: #8ca9ea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 15%;
+  opacity: 0.7;
+  h1{
+    color: rgb(11, 5, 33);
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  p{
+    color: rgb(215, 214, 153);
+  }
+
+  p:hover{
+    color: #717d06;
+  }
+  .services {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .service1{
+      margin-top: 4ex;
+    }
+    .service2{
+      margin-top: 4ex;
+    }
+    .service3{
+      margin-top: 4ex;
+      .logo-perso{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        img{
+          width:40px;
+          height:40px;
+        }
+      }
+      .logo-perso-2{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        img{
+          width:40px;
+          height:40px;
+        }
+      }
+      .logo-perso-3{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        img{
+          width:40px;
+          height:40px;
+        }
+      }
+    }
+  }
+}
+
+
 
 
 /*# sourceMappingURL=style.css.map */
@@ -1520,7 +1556,6 @@ body{
     }
   
   }
-  }
   .about_me {
     height: 120vh;
     width: 100%;
@@ -1637,11 +1672,11 @@ body{
           grid-column: 1/2;
           grid-row: 1/2;
           img{
-              margin-top:15%; 
-              margin-left: 20%;
-              width: 30%;
-              height: 13vh;
-              transform: rotate(-13deg);
+            margin-top:15%; 
+            margin-left: 20%;
+            width: 30%;
+            height: 20vh;
+            transform: rotate(-13deg);
               
              }
         }
@@ -1735,9 +1770,72 @@ body{
       height: 2px;
       width: 100%;
       background-color: black;
-      margin-top: 20%;
+      margin-top: 5%;
     }
   }
+  }
+  footer {
+    background-color: #8ca9ea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 15%;
+    opacity: 0.7;
+    h1{
+      color: rgb(11, 5, 33);
+      font-size: larger;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    p{
+      color: rgb(215, 214, 153);
+    }
+  
+    p:hover{
+      color: #717d06;
+    }
+    .services {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .service1{
+        margin-top: 4ex;
+      }
+      .service2{
+        margin-top: 4ex;
+      }
+      .service3{
+        margin-top: 4ex;
+        .logo-perso{
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          img{
+            width:40px;
+            height:40px;
+          }
+        }
+        .logo-perso-2{
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          img{
+            width:40px;
+            height:40px;
+          }
+        }
+        .logo-perso-3{
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          img{
+            width:40px;
+            height:40px;
+          }
+        }
+      }
+    }
+  }
+ 
 }
 @media (max-width: 640px) {
   header .menu {
