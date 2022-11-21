@@ -80,22 +80,6 @@ header .menu li a:hover::after {
   height: 10px;
 }
 
-/*
-.menu li a::before {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    content: "";
-    width: 0;
-    height: 2px;
-    border-radius: 6px;
-    background-color: rgba(215 214 153);
-    transition: 0.5s;
-}
-.menu li a:hover::before {
-    width: 100%;
-}
-*/
 body .presentation {
   padding-top: 5%;
   padding-left: 3%;
