@@ -214,10 +214,10 @@ body{
       animation-delay: 5s;
   }
   .animate__animated.animate__backInUp{
-    animation-delay: 7s;
+    animation-delay: 5s;
   }
     .midle{
-      padding-inline: 30%;
+      margin-left: 40px;
       font-weight: bold;
       font-size: 25px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -825,23 +825,19 @@ body{
               height: 60px;
               border-radius: 20px;
               width: 15em;
-              background-color: #fff;
+              background-color: white;
+              color: #c4c22c;
               margin-top: 10%;
               margin-left: -10px;
               border: 3px solid #0b0521c8;
               transition: background-color 0.3s, color 0.3s,border 0.3s;
-                
-                h2{
-                  padding-top: 1.5rem;
-                  font-weight: 700;
-                  color: #D7D699;
-                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-              }
-              :hover {
-              background-color: #0b0521c8;
-              border-radius: 20px;
-              border: 3px solid #D7D699;
-              color: white;
+              font-weight: 700;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                :hover {
+                  background-color: #0b0521c8;
+                  border-radius: 20px;
+                  border: 3px solid #D7D699;
+                  color: white;
               }
             }
     
