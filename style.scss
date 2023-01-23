@@ -181,10 +181,7 @@ body{
           transform: scale(1);
           max-width: 400px;
           margin: 0px;
-          border-radius: 35px;
-           
-          
-          
+          border-radius: 35px; 
         }
         .our_card {
           position: relative;
@@ -217,11 +214,10 @@ body{
     animation-delay: 5s;
   }
     .midle{
-      margin-left: 40px;
+      justify-content: center;
       font-weight: bold;
       font-size: 25px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
     }
   .categories{
     width: 100%;
