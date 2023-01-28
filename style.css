@@ -178,19 +178,16 @@ body .animate__animated.animate__fadeInDown {
   --animate-duration: 1s;
 }
 body .animate__animated.animate__backInLeft {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
 body .animate__animated.animate__fadeInUp {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 body .animate__animated.animate__backInUp {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  animation-delay: 5s;
 }
 body .midle {
-  margin-left: 40px;
+  margin-left: 500px;
   font-weight: bold;
   font-size: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1061,13 +1058,11 @@ footer .services .service3 .logo-perso-3 img {
     --animate-duration: 2s;
   }
   body .animate__animated.animate__backInLeft {
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    animation-delay: 2s;
     --animate-duration: 1s;
   }
   body .animate__animated.animate__fadeInUp {
-    -webkit-animation-delay: 4s;
-            animation-delay: 4s;
+    animation-delay: 4s;
   }
   body .midle {
     padding-left: 35%;
@@ -2453,4 +2448,6 @@ footer .services .service3 .logo-perso-3 img {
     width: 40px;
     height: 40px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
