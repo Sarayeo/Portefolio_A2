@@ -7,30 +7,6 @@ var small_menu = document.querySelector('.toggle_menu')
              small_menu.classList.toggle('active');
              menu.classList.toggle('responsive');
         }
-//slider2
-var slider = document.querySelector('.slider');
-var prevButton = document.querySelector('.slider-button.prev');
-var nextButton = document.querySelector('.slider-button.next');
-var images = document.querySelectorAll('.slider .slup.sluppy');
-var currentSlide = 0;
-
-prevButton.addEventListener('click', function() {
-    currentSlide--;
-    updateSlider();
-});
-
-nextButton.addEventListener('click', function() {
-    currentSlide++;
-    updateSlider();
-});
-function updateSlider() {
-    slider.style.transform = 'translateX(' + (currentSlide * -50) + '%)';
-    if (currentSlide < 0 ) {
-        currentSlide = images.length - 1;
-    } else if (currentSlide >= images.length) {
-        currentSlide = 0;
-    }
-}
 
 //slider
         const options = document.querySelectorAll(".our_card")
