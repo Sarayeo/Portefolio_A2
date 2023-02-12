@@ -347,7 +347,7 @@ body .animate__animated.animate__backInUp {
   animation-delay: 5s;
 }
 body .midle {
-  margin-left: 500px;
+  margin-left: 5%;
   font-weight: bold;
   font-size: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -1054,7 +1054,7 @@ footer .services .service3 .logo-perso-3 img {
   height: 40px;
 }
 
-/*# sourceMappingURL=style.css.map */
+
 @media (min-width: 1400px) {
   header {
     display: flex;
@@ -1889,7 +1889,7 @@ footer .services .service3 .logo-perso-3 img {
     border-radius: 18px;
   }
   body .midle {
-    padding-left: 10%;
+    padding-left: 5%;
     font-weight: bold;
     font-size: 25px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -2580,6 +2580,4 @@ footer .services .service3 .logo-perso-3 img {
     width: 40px;
     height: 40px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
